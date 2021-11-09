@@ -1,7 +1,7 @@
 # Provider
 provider "aws" {
-    access_key = "AKIAWCEO7EA62C7ONKHH"
-    secret_key = "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"
+    access_key = ""
+    secret_key = ""
     region = "us-east-1"
 }
 
@@ -70,7 +70,7 @@ resource "aws_instance" "nginx1" {
 sudo amazon-linux-extras install -y nginx1
 sudo service nginx start
 sudo rm /usr/share/nginx/html/index.html
-echo '<html><head><title>Duncan Terraform Demo</title></head><body><h1>Duncan Terraform Demo</h1></body></html>'
+echo '<html><head><title>Duncan Terraform Demo</title></head><body><h1>Duncan Terraform Demo</h1></body></html>' >> /usr/share/nginx/html/index.html
 EOF
 
 }
